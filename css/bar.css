@@ -1,9 +1,17 @@
 #circleBar{
-    height: 420px;
+    height: auto;
     text-align: center;
     font-family: Tahoma;
     background-color: #fff;
 }
+
+#circleBar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #circleBar h1{
     font-family: Calibri;
     font-weight: bold;
