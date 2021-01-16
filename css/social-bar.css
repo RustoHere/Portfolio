@@ -1,0 +1,32 @@
+.a-social-b{
+    position:fixed;
+    top:50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+.a-social-b a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.a-social-b i{
+    color:#2b2b2b;
+    font-size: 20px;
+}
+.a-social-b a:hover{
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
+}
+.a-social-b a:hover i{
+    color: #ffffff;
+    transition: all ease 0.5s;
+}

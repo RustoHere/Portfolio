@@ -1,0 +1,19 @@
+.model{
+    height: 550px;
+    position: absolute;
+    bottom: 70px;
+    left: 70%;
+    transform: translateX(-70%);
+}
+@media(max-width:1000px){
+    .model{
+        height: 460px;
+        left:90%;
+        transform: translateX(-90%);
+    }
+}
+@media(max-width:750px){
+    .model{
+        display: none;
+    }
+}

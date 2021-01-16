@@ -1,0 +1,87 @@
+.social-icons ul{
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+.social-icons ul li{
+    list-style: none;
+}
+.social-icons ul li a{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background: # #f6f5f5;
+    text-decoration: none;
+    color: #262626;
+    margin: 0 10px;
+    transition: .5s;
+}
+.social-icons ul li a span {
+    position: absolute;
+    transition: transform .5s;
+} 
+.social-icons ul li a span:nth-child(1),
+.social-icons ul li a span:nth-child(3){
+    width: 50px;
+    height: 1px;
+    background: #000;
+}
+.social-icons ul li a span:nth-child(1){
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+.social-icons ul li a:hover span:nth-child(1){
+    transform-origin: left;
+    transform: scale(0);
+    transition: transform .5s;
+}
+.social-icons ul li a span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+.social-icons ul li a:hover span:nth-child(3){
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+
+
+.social-icons ul li a span:nth-child(2),
+.social-icons ul li a span:nth-child(4){
+    width: 1px;
+    height: 50px;
+    background: #000;
+}
+.social-icons ul li a span:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.social-icons ul li a:hover span:nth-child(2){
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform .5s;
+}
+.social-icons ul li a span:nth-child(4){
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.social-icons ul li a:hover span:nth-child(4){
+    transform-origin: bottom;
+    transform: scaleY(1);
+    transition: transform .5s;
+}

@@ -1,0 +1,48 @@
+#circleBar{
+    height: 420px;
+    text-align: center;
+    font-family: Tahoma;
+    background-color: #fff;
+}
+#circleBar h1{
+    font-family: Calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:#1a1a1a;
+}
+#circleBar .round{
+    min-height: 255px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#circleBar .round strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: #212121;
+    font-weight: 100;
+}
+#circleBar span{
+    display: block;
+    color: rgb(88, 88, 88);
+    font-size: 17px;
+    margin-top: 10px;
+}
+#circleBar span i{
+    color: #ff0000;
+    font-size: 22px;
+    margin-top: 7px;
+}
+.btn{
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+}
+.btn:hover{
+    color:#fff
+}

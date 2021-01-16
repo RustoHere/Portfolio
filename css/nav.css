@@ -1,0 +1,132 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 5%;
+}
+ul{
+    list-style: none;   
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+}
+.toggle{
+    display: none;
+}
+nav ul li a{
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+}
+.logo {
+    font-family: RoadTest;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    font-size: 22px;
+    color: black;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black ;
+    border-radius: 50%;
+    font-weight: 600;
+}
+.active{
+    font-weight: bold;
+    color: #2d2a2a
+}
+@media(max-width:750px){
+    .toggle{
+        display: block;
+    }
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+        background-color: #ebeef4;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        display: none;
+        
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a{
+        font-family: calibri;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        color: #5c5c5c;
+    }
+    nav ul li a:hover{
+        color: #121212;
+    }
+    ul li a::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        text-align: center;
+        font-size: 4em;
+        color: #2196f3;
+        opacity: 0;
+        line-height: 100vh;
+        transition: 0.5s;
+
+    }
+    ul li:hover a::before{
+        opacity: 1;
+    }
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../images/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active{
+        position: fixed;
+        right: 20px;
+        background: url(../images/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    nav ul.navigation.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
